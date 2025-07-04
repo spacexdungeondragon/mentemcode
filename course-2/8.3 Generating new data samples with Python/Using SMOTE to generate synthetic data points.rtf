@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Arial-BoldMT;\f2\fswiss\fcharset0 Arial-ItalicMT;
+\f3\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red234\green234\blue234;\red20\green19\blue21;\red255\green255\blue255;
+\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c93333\c93333\c93333;\cssrgb\c10196\c9804\c10980;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c100000\c100000\c100000\c10196;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa400\partightenfactor0
+
+\f0\fs60 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Using SMOTE to generate synthetic data points\
+\pard\pardeftab720\sl450\partightenfactor0
+
+\f1\b\fs30 \cf2 Objective
+\f0\b0 : To use SMOTE for generating synthetic data points in a highly imbalanced dataset and visualise the result.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs42 \cf2 \cb3 Steps:\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl450\partightenfactor0
+\ls1\ilvl0
+\fs30 \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Create a new imbalanced dataset with 9000 instances: 8820 instances of class=0 and 180 instances of class=1 using make_classification function similar to the one in the lesson. \cb1 \uc0\u8232 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Plot this new dataset as a scatter plot to visualise the imbalance. \cb1 \uc0\u8232 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Use the SMOTE package with the following parameters: \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl450\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 sampling_strategy=0.5 \cb1 \uc0\u8232 \
+\ls1\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 k_neighbors=7\cb1 \uc0\u8232 \
+\ls1\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 random_state=45 \cb1 \uc0\u8232 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl450\partightenfactor0
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Apply these to the newly-created dataset to generate synthetic data points. \cb1 \uc0\u8232 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Print the count of each class in the new dataset after applying SMOTE to verify the number of instances in each class.\cb1 \uc0\u8232 \
+\pard\pardeftab720\sl450\partightenfactor0
+\cf2 \cb3 Plot the new dataset after applying SMOTE. Compare this plot with the initial plot to visually understand the impact of SMOTE.\cb1 \
+\pard\pardeftab720\sl450\partightenfactor0
+
+\f2\i \cf2 \cb3 Here are some hints to assist you with this activity
+\f0\i0 .\cb1 \
+\pard\pardeftab720\sl450\partightenfactor0
+\cf2 \cb3 Remember to import necessary libraries: 
+\f3\fs27 \cf4 \cb5 \strokec4 sklearn.datasets
+\f0\fs30 \cf2 \cb3 \strokec2 , 
+\f3\fs27 \cf4 \cb5 \strokec4 matplotlib.pyplot
+\f0\fs30 \cf2 \cb3 \strokec2 , 
+\f3\fs27 \cf4 \cb5 \strokec4 numpy
+\f0\fs30 \cf2 \cb3 \strokec2 , 
+\f3\fs27 \cf4 \cb5 \strokec4 collections.Counter
+\f0\fs30 \cf2 \cb3 \strokec2 , and 
+\f3\fs27 \cf4 \cb5 \strokec4 imblearn.over_sampling.SMOTE
+\f0\fs30 \cf2 \cb3 \strokec2  Use the 
+\f3\fs27 \cf4 \cb5 \strokec4 make_classification
+\f0\fs30 \cf2 \cb3 \strokec2  function to create the imbalanced dataset Use the scatter function from 
+\f3\fs27 \cf4 \cb5 \strokec4 matplotlib.pyplot
+\f0\fs30 \cf2 \cb3 \strokec2  to create the scatter plots Use the SMOTE function from 
+\f3\fs27 \cf4 \cb5 \strokec4 imblearn.over_sampling
+\f0\fs30 \cf2 \cb3 \strokec2  to apply SMOTE to the dataset Use the counter function from collections to count the number of instances in each class\cb1 \
+\cb3 After completing this exercise, you should have a better understanding of how to use SMOTE to address class imbalance issues by generating synthetic data points.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl450\partightenfactor0
+\ls2\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 If you get stuck, refer to "main_solved.ipynb" to help with coding in "main.ipynb."\cb1 \uc0\u8232 \
+\pard\pardeftab720\sl450\partightenfactor0
+\cf2 \cb3 Note: To complete this activity click the 
+\f1\b Submit/Mark
+\f0\b0  button in the bottom right corner. These activities are for 
+\f1\b your own practice
+\f0\b0  in a coding environment and are not assessed. If you have any questions about an activity, please ask your facilitator in a live session or on the Discussion board. \cb1 \
+}
